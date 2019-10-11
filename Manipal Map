@@ -1,0 +1,21 @@
+---
+title: "Developing data products Project "
+author: "Anuhya Sai K.A."
+date: 11th Oct 2019
+output:
+  html_document: default
+  pdf_document: default
+---
+
+
+{r}
+library(leaflet)
+
+
+
+
+{r}
+m <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lat=13.3490, lng=74.7856, popup="Manipal")
+m  # Print the map
